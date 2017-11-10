@@ -19,3 +19,6 @@
 [submodule "vim-template"]
 	path = vim-template
 	url = https://github.com/aperezdc/vim-template.git
+[submodule "tabular"]
+	path = tabular
+	url = https://github.com/godlygeek/tabular.git

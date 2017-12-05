@@ -3,9 +3,12 @@
 ### 子模块初步
 ```
 git submodule add https://github.com/tpope/vim-pathogen.git
-git submodule add https://github.com/ervandew/supertab.git
-git submodule add https://github.com/mattn/emmet-vim.git
-git submodule add https://github.com/scrooloose/nerdtree.git
+```
+
+### 删除子模块
+```
+git rm jedi-vim/
+rm -rf .git/modules/jedi-vim/
 ```
 
 ### 克隆一个带子模块的项目
@@ -28,3 +31,4 @@ export https_proxy="http://127.0.0.1:8118"
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
+

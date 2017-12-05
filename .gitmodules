@@ -22,6 +22,6 @@
 [submodule "tabular"]
 	path = tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "jedi"]
-	path = jedi
-	url = https://github.com/davidhalter/jedi.git
+[submodule "jedi-vim"]
+	path = jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git

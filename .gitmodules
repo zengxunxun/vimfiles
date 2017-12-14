@@ -25,3 +25,6 @@
 [submodule "jedi-vim"]
 	path = jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "tagbar"]
+	path = tagbar
+	url = https://github.com/majutsushi/tagbar.git

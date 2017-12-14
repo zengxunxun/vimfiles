@@ -19,6 +19,8 @@ start() {
     ln -sf ../vim-pathogen   bundle
     ln -sf ../vim-template bundle
     ln -sf ../jedi-vim bundle
+    ln -sf ../tagbar bundle
+
 }
 
 uninstall() {
@@ -32,6 +34,7 @@ uninstall() {
     unlink bundle/vim-pathogen   
     unlink bundle/vim-template 
     unlink bundle/jedi-vim
+    unlink bundle/tagbar
     unlink autoload
     rmdir bundle
 }

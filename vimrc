@@ -30,6 +30,8 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 let g:ctrlp_cache_dir = '~/.ctrlp'
 
 "let g:ctrlp_tabpage_position = 'ac'
+"
+
 let g:ctrlp_use_caching = 1
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_clear_cache_on_exit = 1
@@ -87,7 +89,9 @@ call pathogen#helptags()
 "let ropevim_extended_complete=1
 
 "let g:jedi#popup_select_first = 0
-"let g:jedi#show_call_signatures = "2"
+"let g:jedi#show_call_signatures = 2
+"
+let g:jedi#completions_enabled = 0
 
 "autocmd FileType python setlocal completeopt-=preview
 "let g:pymode_rope = 0

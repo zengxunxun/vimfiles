@@ -21,6 +21,8 @@ start() {
     ln -sf ../jedi-vim bundle
     ln -sf ../tagbar bundle
 
+    pip install jedi --user
+
 }
 
 uninstall() {

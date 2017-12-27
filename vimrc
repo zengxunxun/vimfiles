@@ -75,6 +75,7 @@ call pathogen#helptags()
 "nmap <C-w> :resize -2<CR>
 "nmap <C-f> :CtrlP<CR>
 
+nmap <C-\><C-m> : CtrlP<CR>
 
 "nmap <C-\><C-l> :call ToggleQuickfixList()<CR>
 "

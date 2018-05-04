@@ -8,6 +8,9 @@ set laststatus=2
 set directory=/tmp
 set nowrap
 set cursorline
+set mouse=a
+set list
+set listchars=tab:>-
 
 "set omnifunc=syntaxcomplete#Complete
 "set cscopequickfix=s-,c-,d-,i-,t-,e-,g-
@@ -26,8 +29,6 @@ endif
 set clipboard+=unnamed
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 
-let g:ctrlp_cmd = 'CtrlPMRU'
-let g:ctrlp_cache_dir = '~/.ctrlp'
 
 "let g:ctrlp_tabpage_position = 'ac'
 "
@@ -69,13 +70,13 @@ call pathogen#helptags()
 
 "set nocscopeverbose
 
-"nmap <C-d> :vertical resize +2<CR>
-"nmap <C-a> :vertical resize -2<CR>
-"nmap <C-s> :resize +2<CR>
-"nmap <C-w> :resize -2<CR>
-"nmap <C-f> :CtrlP<CR>
+nmap <C-\><C-d> :vertical resize +2<CR>
+nmap <C-\><C-a> :vertical resize -2<CR>
+nmap <C-\><C-s> :resize +2<CR>
+nmap <C-\><C-w> :resize -2<CR>
 
-nmap <C-\><C-m> : CtrlP<CR>
+nmap <C-\><C-m> : CtrlPMRU<CR>
+let g:ctrlp_cache_dir = '~/.ctrlp'
 
 "nmap <C-\><C-l> :call ToggleQuickfixList()<CR>
 "
